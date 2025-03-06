@@ -144,6 +144,9 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 }
+.section {
+  padding: 120px 0;
+}
 /* ==============================
    Common Elements
    ============================== */
@@ -195,6 +198,10 @@ img {
    Logo Styles
    ============================== */
 .logo {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 76px;
+
   font-family: var(--logo-family);
   font-size: var(--logo-size);
   font-weight: var(--logo-weight);
@@ -216,6 +223,10 @@ img {
 /* ==============================
    Header
    ============================== */
+header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--cornflower);
+}
 
 address {
   font-style: normal;
@@ -234,11 +245,36 @@ header address a:focus {
   color: var(--navy-blue);
   text-decoration: none;
   font-weight: 500;
+  padding: 24px 0;
 }
 
 .top-line-items:hover,
 .top-line-items:focus {
   color: var(--ocean);
+}
+
+.top-line-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.top-line-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.top-line-contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 /* ==============================
